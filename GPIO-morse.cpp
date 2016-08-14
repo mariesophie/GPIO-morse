@@ -26,7 +26,7 @@ int main() {
 		digitalWrite(intPin, 1);	// LED on
 		delay(intDit);				// .
 		digitalWrite(intPin, 0);	// LED off
-		delay(intGapInterElement)	// pause between . and -
+		delay(intGapInterElement);	// pause between . and -
 		digitalWrite(intPin, 1);	// LED on
 		delay(intDah);				// -
 		digitalWrite(intPin, 0);	// LED off
