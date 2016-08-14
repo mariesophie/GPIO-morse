@@ -3,6 +3,8 @@
 // include standard library
 #include <stdio.h>
 
+#include <unistd.h>
+
 int main() {
 
 	// start WiringPi Api (very important)
@@ -21,8 +23,9 @@ int main() {
 	pinMode(intPin, OUTPUT);
 
 	// endless loop
-	// send A
-	while (1) {
+	while (access("gpio-go", 00) == 0) {
+		pinMode(intPin, OUTPUT);
+		// send A (.-)
 		digitalWrite(intPin, 1);	// LED on
 		delay(intDit);				// .
 		digitalWrite(intPin, 0);	// LED off
