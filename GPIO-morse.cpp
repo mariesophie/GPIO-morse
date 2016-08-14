@@ -1,9 +1,13 @@
 #include <wiringPi.h>
+#include <stdio.h>	// include standard library
+#include <unistd.h>	// needed to check if file exists
 
-// include standard library
-#include <stdio.h>
-
-#include <unistd.h>
+char* translateLettersToMorseCode(char letter) {
+	// 9 chars should be the longest slash-dot-translation
+	// (SOS has no break between the characters)
+	char* str = new char[9];
+	return str;
+}
 
 int main() {
 
